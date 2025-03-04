@@ -12,10 +12,6 @@ function sums(N) {
     }
     return sum;
 }
-let n = +prompt("Nhập một số vào trong chương trình: ");
+let n = Number(prompt("Nhập một số nguyên dương: "));/* Yêu cầu người dùng nhập vào số nguyên dương  */
 let result = sums(n);
-if (result !== false) {
-    console.log(result);
-} else if (result === false) {
-    console.log(result);
-}
+console.log(result !== false ? `Tổng các số từ 1 đến ${n} là: ${result}` : "");/* Kiểm tra đúng sai về giá trị mà dev nhập vào */
